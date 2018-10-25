@@ -1,0 +1,30 @@
+<div>
+  <!-- <h1>Events page!</h1>
+  <hr />
+  <div class="well">
+    <div>Here are our favorite totaly fictional events</div>
+  </div> -->
+  <div>
+    <h1>Upcoming Angular Events</h1>
+    <hr />
+    <div class="row">
+      <div *ngFor="let event of events" class="col-md-5">
+        <app-event-thumbnail #thumbnail [inputEvent]="event"></app-event-thumbnail>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <h1>Past Angular Events</h1>
+    <hr />
+    <div class="row">
+      <div class="col-md-5">
+        <app-event-thumbnail #thumbnail (clickEvent)="handleClickEvent($event)" [inputEvent]="pastEvent"></app-event-thumbnail>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" (click)='thumbnail.logFoo()'>LogFoo</button>
+
+</div>

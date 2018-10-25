@@ -1,0 +1,12 @@
+.nav.navbar-nav {
+  font-size: 15px;
+}
+#searchForm {
+  margin-right: 100 px;
+}
+
+@media (max-width: 1200 px) {
+  #searchForm {
+    display: none;
+  }
+}

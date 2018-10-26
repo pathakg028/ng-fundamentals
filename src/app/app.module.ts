@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // import { ToastrService } from './services/toastr.service';
-import { EventService } from './events/services/event.service';
+// import { EventService } from './events/services/event.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -17,7 +17,6 @@ import { EventsComponent } from './events/events.component';
     NavComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [EventService],
   // providers: [EventService, ToastrService],
   bootstrap: [AppComponent]
 })

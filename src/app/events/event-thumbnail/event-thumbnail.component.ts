@@ -12,6 +12,15 @@ export class EventThumbnailComponent implements OnInit {
   @Output()
   clickEvent = new EventEmitter();
 
+  getStartTimeClass() {
+    const isEarly = this.inputEvent && this.inputEvent.time === '8:00 am';
+    if (isEarly) {
+      return 'green bold';
+    } else {
+      return '';
+    }
+  }
+
   handleClickMe() {
     this.clickEvent.emit(this.inputEvent.name);
   }

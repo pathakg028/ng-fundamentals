@@ -9,3 +9,11 @@
 .well div {
   color: #bbb;
 }
+
+.green {
+  color: greenyellow !important;
+}
+
+.bold {
+  font-weight: bold;
+}

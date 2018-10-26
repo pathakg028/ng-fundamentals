@@ -52,7 +52,7 @@ const EVENTS = [
     }
   },
   {
-    id: 3,
+    id: 4,
     name: 'Angular Conf!',
     date: '10/10/2022',
     time: '12:00 am',

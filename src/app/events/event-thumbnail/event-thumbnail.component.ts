@@ -9,8 +9,8 @@ export class EventThumbnailComponent implements OnInit {
   @Input()
   inputEvent: any;
 
-  @Output()
-  clickEvent = new EventEmitter();
+  // @Output()
+  // clickEvent = new EventEmitter();
 
   getStartTimeClass() {
     const isEarly = this.inputEvent && this.inputEvent.time === '8:00 am';
@@ -21,13 +21,10 @@ export class EventThumbnailComponent implements OnInit {
     }
   }
 
-  handleClickMe() {
-    this.clickEvent.emit(this.inputEvent.name);
-  }
+  // handleClickMe() {
+  //   this.clickEvent.emit(this.inputEvent.name);
+  // }
 
-  logFoo() {
-    console.log('foo');
-  }
   constructor() {}
 
   ngOnInit() {}
